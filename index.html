@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, course, css">
     <meta name="description" content="Это мой сайт резюме">
+    <link rel="stylesheet" href="style.css">
     <title>Сайт РЕЗЮМЕ</title>
 </head>
+
 <body>
-    <img src="photo_2018.jpg" alt="фото" width="200">
-    <h1>Бойназаров Азиз</h1>
-    <p><strong>Я безработный и ищу работу на фрилансе.</strong> А пока не нашел. Ешё я сдал документы на гос.учреждение</p>
-    <hr>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Читать книги</li>
-        <li>Ремонтировать компьютеры</li>
-        <li>Играть игры</li>
-        <li>Гулять в природе</li>
-    </ol>
-    <hr>
-    <h3>Список соц. сетей</h3>
-    <a href="https://e.mail.ru/newsletters/">Мail.ru</a>
-    <br>
-    <a href="https://umail.uz/">Umail.uz</a>
-    <br>
-    <a href="https://mail.rambler.ru/">Rambler.ru</a>
-    <hr>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название компании</th>
-                <th>Должность</th>
-                <th>год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Агробанк</td>
-                <td>Ведущий спец-т</td>
-                <td>1999-2006</td>
-            </tr>
-            <tr>
-                <td>Узмобайл</td>
-                <td>оператор 1-кат.</td>
-                <td>2007-2008</td>
-            </tr>
-            <tr>
-                <td>СЭМС</td>
-                <td>радиооператор</td>
-                <td>2010-2013</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h2>Связятся со мной</h2>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="container">
+        <div class="info">
+            <img src="photo_2018.jpg" alt="фото" class="img">
+            <div class="info-text">
+                <h1>Бойназаров Азиз</h1>
+                <p>Я безработный и ищу работу на фрилансе. А пока не нашел. Ешё я сдал документы на гос.учреждение</p>
+                <div class="seti">
+                    <h4>Список соц. сетей</h4>
+                    <a href="https://e.mail.ru/newsletters/" target="_blank">Мail.ru</a>
+                    |
+                    <a href="https://umail.uz/" target="_blank">Umail.uz</a>
+                    |
+                    <a href="https://mail.rambler.ru/" target="_blank">Rambler.ru</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="email">Ваш е-mail:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card hobbi">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Читать книги</li>
+                <li>Ремонтировать компьютеры</li>
+                <li>Играть игры</li>
+                <li>Гулять в природе</li>
+            </ol>
         </div>
-        <div>
-            <label for="mesage">Ваше сообщение:</label>
-            <br>
-            <textarea id="mesage" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+        <div class="card opit">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!--<thead>
+                    <tr>
+                    <th>Название компании</th>
+                    <th>Должность</th>
+                    <th>год</th>
+                    </tr>
+                    </thead>-->
+            <tbody>
+                <tr>
+                    <td>Агробанк</td>
+                    <td>Ведущий спец-т</td>
+                    <td>1999-2006</td>
+                </tr>
+                <tr>
+                    <td>Узмобайл</td>
+                    <td>оператор 1-кат.</td>
+                    <td>2007-2008</td>
+                </tr>
+                <tr>
+                    <td>СЭМС</td>
+                    <td>радиооператор</td>
+                    <td>2010-2013</td>
+                </tr>
+            </tbody>
+            </table>
         </div>
-        <input type="submit" value="Отправить!">
-    </form>
+        <form class="form">
+            <h2>Связятся со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш е-mail:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mesage">Ваше сообщение:</label>
+                <textarea id="mesage" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <button type="submit" class="btn"> Отправить! </button>
+        </form>
+    </div>
 </body>
 </html>
